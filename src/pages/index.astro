@@ -27,7 +27,6 @@ import '../styles/global.css';
     </header>
 
     <section class="hero">
-      <img src="/images/sbx-stav-09.jpeg" alt="Realizace koupelny Brno – Stavbox Koupelny" />
       <div class="hero-text">
         <h1>Řešení Vaší koupelny správně</h1>
         <p>Perfektní lepení obkladů, kamenické rohy, kvalitní silikony a spárovačky, které se nešpiní.</p>
@@ -93,20 +92,20 @@ import '../styles/global.css';
       <div class="gallery-inner">
         <h2>Nejnovější projekty</h2>
         <div class="masonry">
-          <img src="/images/sbx-stav-01.jpeg" alt="Realizace koupelny Brno" />
-          <img src="/images/sbx-stav-02.jpeg" alt="Realizace koupelny Brno" />
-          <img src="/images/sbx-stav-03.jpeg" alt="Realizace koupelny Brno" />
-          <img src="/images/sbx-stav-04.jpeg" alt="Realizace koupelny Brno" />
-          <img src="/images/sbx-stav-05.jpeg" alt="Realizace koupelny Brno" />
-          <img src="/images/sbx-stav-06.jpeg" alt="Realizace koupelny Brno" />
-          <img src="/images/sbx-stav-07.jpeg" alt="Realizace koupelny Brno" />
-          <img src="/images/sbx-stav-08.jpeg" alt="Realizace koupelny Brno" />
-          <img src="/images/sbx-stav-10.jpeg" alt="Realizace koupelny Brno" />
-          <img src="/images/sbx-stav-11.jpeg" alt="Realizace koupelny Brno" />
-          <img src="/images/sbx-stav-12.jpeg" alt="Realizace koupelny Brno" />
-          <img src="/images/sbx-stav-13.jpeg" alt="Realizace koupelny Brno" />
-          <img src="/images/sbx-stav-14.jpeg" alt="Realizace koupelny Brno" />
-          <img src="/images/sbx-stav-15.jpeg" alt="Realizace koupelny Brno" />
+          <a href="/images/sbx-stav-01.jpeg" class="glightbox"><img src="/images/sbx-stav-01.jpeg" alt="Realizace koupelny Brno" /></a>
+          <a href="/images/sbx-stav-02.jpeg" class="glightbox"><img src="/images/sbx-stav-02.jpeg" alt="Realizace koupelny Brno" /></a>
+          <a href="/images/sbx-stav-03.jpeg" class="glightbox"><img src="/images/sbx-stav-03.jpeg" alt="Realizace koupelny Brno" /></a>
+          <a href="/images/sbx-stav-04.jpeg" class="glightbox"><img src="/images/sbx-stav-04.jpeg" alt="Realizace koupelny Brno" /></a>
+          <a href="/images/sbx-stav-05.jpeg" class="glightbox"><img src="/images/sbx-stav-05.jpeg" alt="Realizace koupelny Brno" /></a>
+          <a href="/images/sbx-stav-06.jpeg" class="glightbox"><img src="/images/sbx-stav-06.jpeg" alt="Realizace koupelny Brno" /></a>
+          <a href="/images/sbx-stav-07.jpeg" class="glightbox"><img src="/images/sbx-stav-07.jpeg" alt="Realizace koupelny Brno" /></a>
+          <a href="/images/sbx-stav-08.jpeg" class="glightbox"><img src="/images/sbx-stav-08.jpeg" alt="Realizace koupelny Brno" /></a>
+          <a href="/images/sbx-stav-10.jpeg" class="glightbox"><img src="/images/sbx-stav-10.jpeg" alt="Realizace koupelny Brno" /></a>
+          <a href="/images/sbx-stav-11.jpeg" class="glightbox"><img src="/images/sbx-stav-11.jpeg" alt="Realizace koupelny Brno" /></a>
+          <a href="/images/sbx-stav-12.jpeg" class="glightbox"><img src="/images/sbx-stav-12.jpeg" alt="Realizace koupelny Brno" /></a>
+          <a href="/images/sbx-stav-13.jpeg" class="glightbox"><img src="/images/sbx-stav-13.jpeg" alt="Realizace koupelny Brno" /></a>
+          <a href="/images/sbx-stav-14.jpeg" class="glightbox"><img src="/images/sbx-stav-14.jpeg" alt="Realizace koupelny Brno" /></a>
+          <a href="/images/sbx-stav-15.jpeg" class="glightbox"><img src="/images/sbx-stav-15.jpeg" alt="Realizace koupelny Brno" /></a>
         </div>
       </div>
     </section>
@@ -127,6 +126,14 @@ import '../styles/global.css';
         </div>
       </div>
     </footer>
+
+
+    <script>
+      import GLightbox from 'glightbox';
+      const lightbox = GLightbox({
+        selector: '.glightbox'
+      });
+    </script>
 
   </body>
 
