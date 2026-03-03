@@ -19,7 +19,6 @@ import '../styles/global.css';
     <meta name="description" content="Stavbox Koupelny – kompletní realizace koupelen v Brně. Obkládání, dlažby, epoxidové spárovačky, kamenické rohy." />
     <title>SB Stav | Realizace koupelen Brno</title>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet" />
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   </head>
 
   <body>
@@ -148,8 +147,6 @@ import '../styles/global.css';
             <textarea name="message" id="message" rows="5" required></textarea>
           </div>
 
-          <div class="cf-turnstile" data-sitekey="0x4AAAAAAClhdcB5DwL061g3" data-language="cs"></div>
-
           <button type="submit">Odeslat zprávu</button>
           <div id="form-result"></div>
         </form>
@@ -187,13 +184,6 @@ import '../styles/global.css';
 
       form.addEventListener('submit', async function(e) {
         e.preventDefault();
-
-        const turnstileResponse = form.querySelector('[name="cf-turnstile-response"]');
-        if (!turnstileResponse || !turnstileResponse.value) {
-          result.innerHTML = '<p class="error">Prosím počkejte na ověření a zkuste znovu.</p>';
-          return;
-        }
-
         const formData = new FormData(form);
         const response = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
@@ -204,7 +194,7 @@ import '../styles/global.css';
           result.innerHTML = '<p class="success">Děkujeme! Ozveme se vám co nejdříve.</p>';
           form.reset();
         } else {
-          result.innerHTML = '<p class="error">Něco se pokazilo. Zkuste to prosím znovu. ' + (data.message || '') + '</p>';
+          result.innerHTML = '<p class="error">Něco se pokazilo. Zkuste to prosím znovu.</p>';
         }
       });
     </script>
