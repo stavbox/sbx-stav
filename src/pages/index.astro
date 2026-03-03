@@ -12,6 +12,7 @@ push to github and cloudflare:
 import '../styles/global.css';
 ---
 
+
 <html lang="cs">
   <head>
     <meta charset="UTF-8" />
@@ -19,7 +20,128 @@ import '../styles/global.css';
     <meta name="description" content="Stavbox Koupelny – kompletní realizace koupelen v Brně. Obkládání, dlažby, epoxidové spárovačky, kamenické rohy." />
     <title>SB Stav | Realizace koupelen Brno</title>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://sbx-stav.pages.dev/#business",
+            "name": "SBX Stav – Realizace koupelen",
+            "url": "https://sbx-stav.pages.dev",
+            "logo": "https://sbx-stav.pages.dev/images/logo.png",
+            "image": "https://sbx-stav.pages.dev/images/sbx-stav-09.jpeg",
+            "description": "Kompletní realizace koupelen v Brně. Obkládání, dlažby, epoxidové spárovačky, kamenické rohy a hydroizolace.",
+            "telephone": "+420731762478",
+            "email": "info@sbstav.cz",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Koperníkova 3",
+              "addressLocality": "Brno",
+              "addressRegion": "Jihomoravský kraj",
+              "postalCode": "615 00",
+              "addressCountry": "CZ"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "49.202648",
+              "longitude": "16.637513"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Brno"
+            },
+            "priceRange": "$$",
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "17:00"
+              }
+            ],
+            "sameAs": []
+          },
+          {
+            "@type": "Service",
+            "@id": "https://sbx-stav.pages.dev/#service",
+            "name": "Realizace koupelen Brno",
+            "provider": {
+              "@id": "https://sbx-stav.pages.dev/#business"
+            },
+            "serviceType": "Bathroom Renovation",
+            "areaServed": {
+              "@type": "City",
+              "name": "Brno"
+            },
+            "description": "Kompletní realizace koupelen na klíč včetně obkládání, pokládky dlažeb, epoxidových spárovačů, kamenických rohů, hydroizolace a zednických úprav.",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Služby realizace koupelen",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Kompletní realizace koupelen"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Obkládání koupelen a sprchových koutů"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Pokládka dlažby v interiéru"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Epoxidové spárovačky"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Kamenické rohy"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Velkoformátové obklady a dlažby"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://sbx-stav.pages.dev/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Domů",
+                "item": "https://sbx-stav.pages.dev"
+              }
+            ]
+          }
+        ]
+      }
+      </script>
   </head>
+
 
   <body>
     <header>
