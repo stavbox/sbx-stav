@@ -80,26 +80,37 @@ header {
 
 .services {
   background-color: #f5f5f5;
-  padding: 5rem 3rem;
+  padding: 3rem 3rem;
 }
 
 .services-inner {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
 }
 
-.services h2 {
+.services-left h2,
+.services-right h2 {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2rem;
   color: #111;
 }
 
+.services-location-intro {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-top: 1.5rem;
+}
+
 .services ul {
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
 }
 
 .services ul li {
@@ -121,6 +132,22 @@ header {
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
   background-color: #111;
+  color: white;
+  padding-top: 0;
+}
+
+.highlights-header {
+  grid-column: 1 / -1;
+  padding: 2rem 3rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlights-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
   color: white;
 }
 
@@ -193,7 +220,7 @@ header {
 
 .gallery {
   background-color: #f5f5f5;
-  padding: 5rem 3rem;
+  padding: 3rem 3rem;
 }
 
 .gallery-inner {
@@ -223,7 +250,7 @@ header {
 
 .contact {
   background-color: #f5f5f5;
-  padding: 5rem 3rem;
+  padding: 3rem 3rem;
 }
 
 .contact-inner {
@@ -410,6 +437,11 @@ footer {
               padding: 3rem 1.5rem;
             }
 
+            .services-inner {
+              grid-template-columns: 1fr;
+              gap: 3rem;
+            }
+
             .highlights {
               grid-template-columns: 1fr;
             }
@@ -419,6 +451,10 @@ footer {
               border-bottom: 1px solid #333;
             }
 
+            .highlight-tile:first-child {
+              border-top: 1px solid #333;
+            }
+            
             .highlight-tile:last-child {
               border-bottom: none;
             }
