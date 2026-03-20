@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://prelstav.cz/sitemap-index.xml
