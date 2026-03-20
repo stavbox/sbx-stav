@@ -20,8 +20,17 @@ import '@fontsource/barlow';
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Stavbox Koupelny – kompletní realizace koupelen v Brně. Obkládání, dlažby, epoxidové spárovačky, kamenické rohy." />
-    <title>Realizace koupelen Brno a okolo | PRELSTAV | Precizní a elegantní práce</title>
+
+    <title>Realizace koupelen Brno a Brno-venkov | PRELSTAV | Precizní a elegantní práce</title>
+    <meta name="description" content="Profesionální rekonstrukce koupelny v Brně na klíč. Specialista na kamenické (jolly) rohy, velkoformátové obklady a epoxidové spárování. Kalkulace zdarma.">
+    <meta name="keywords" content="rekonstrukce koupelny Brno, koupelna na klíč Brno, obkladač Brno, kamenické rohy, jolly rohy, epoxidová spárovačka, velkoformátová dlažba">
+    <link rel="canonical" href="https://prelstav.cz/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://prelstav.cz/">
+    <meta property="og:title" content="Rekonstrukce koupelen Brno | PRELSTAV">
+    <meta property="og:description" content="Precizní koupelny na klíč v Brně a okolí. Kamenické rohy a moderní materiály jsou u nás standardem.">
+    <meta property="og:image" content="https://prelstav.cz/images/sbx-stav-09.webp">
 
     <link rel="preload" as="image" href="/images/sbx-stav-09.webp" fetchpriority="high" />
 
@@ -30,12 +39,12 @@ import '@fontsource/barlow';
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": "LocalBusiness",
-            "@id": "https://sbx-stav.pages.dev/#business",
-            "name": "SBX Stav – Realizace koupelen",
-            "url": "https://sbx-stav.pages.dev",
-            "logo": "https://sbx-stav.pages.dev/images/logo.png",
-            "image": "https://sbx-stav.pages.dev/images/sbx-stav-09.webp",
+            "@type": "HomeAndConstructionBusiness",
+            "@id": "https://prelstav.cz/#business",
+            "name": "PRELSTAV – Realizace koupelen Brno",
+            "url": "https://prelstav.cz",
+            "logo": "https://prelstav.cz/images/logo.png",
+            "image": "https://prelstav.cz/images/sbx-stav-09.webp",
             "description": "Kompletní realizace koupelen v Brně. Obkládání, dlažby, epoxidové spárovačky, kamenické rohy a hydroizolace.",
             "telephone": "+420731762478",
             "email": "info@prelstav.cz",
@@ -52,10 +61,11 @@ import '@fontsource/barlow';
               "latitude": "49.202648",
               "longitude": "16.637513"
             },
-            "areaServed": {
-              "@type": "City",
-              "name": "Brno"
-            },
+            "areaServed": [
+              { "@type": "City", "name": "Brno" },
+              { "@type": "City", "name": "Kuřim" },
+              { "@type": "City", "name": "Šlapanice" }
+            ],
             "priceRange": "$$",
             "openingHoursSpecification": [
               {
@@ -64,86 +74,42 @@ import '@fontsource/barlow';
                 "opens": "08:00",
                 "closes": "17:00"
               }
-            ],
-            "sameAs": []
+            ]
           },
           {
             "@type": "Service",
-            "@id": "https://sbx-stav.pages.dev/#service",
+            "@id": "https://prelstav.cz/#service",
             "name": "Realizace koupelen Brno",
-            "provider": {
-              "@id": "https://sbx-stav.pages.dev/#business"
-            },
+            "provider": { "@id": "https://prelstav.cz/#business" },
             "serviceType": "Bathroom Renovation",
-            "areaServed": {
-              "@type": "City",
-              "name": "Brno"
-            },
-            "description": "Kompletní realizace koupelen na klíč včetně obkládání, pokládky dlažeb, epoxidových spárovačů, kamenických rohů, hydroizolace a zednických úprav.",
+            "description": "Kompletní realizace koupelen na klíč včetně obkládání, kamenických rohů a epoxidových spár.",
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
               "name": "Služby realizace koupelen",
               "itemListElement": [
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Kompletní realizace koupelen"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Obkládání koupelen a sprchových koutů"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Pokládka dlažby v interiéru"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Epoxidové spárovačky"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Kamenické rohy"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Velkoformátové obklady a dlažby"
-                  }
-                }
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kompletní realizace koupelen" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Obkládání koupelen a sprchových koutů" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Epoxidové spárovačky" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kamenické rohy (Jolly)" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Velkoformátové obklady a dlažby" } }
               ]
             }
           },
           {
             "@type": "BreadcrumbList",
-            "@id": "https://sbx-stav.pages.dev/#breadcrumb",
+            "@id": "https://prelstav.cz/#breadcrumb",
             "itemListElement": [
               {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Domů",
-                "item": "https://sbx-stav.pages.dev"
+                "item": "https://prelstav.cz"
               }
             ]
           }
         ]
       }
-      </script>
+    </script>
   </head>
 
 
